@@ -72,7 +72,7 @@ Define a `LineSegment` class. Its constructor should take two pairs of coordinat
 Augment the class with the following method...
 * `length` – calculates the length of the (x1, y1) --> (x2, y2) [line segment](http://en.wikipedia.org/wiki/Pythagorean_theorem).
 
-> Hint: Calculate the line segment by taking the square root of `((x2 - x1) ** 2) - ((y2 - y1) ** 2)`.
+> Hint: Calculate the line segment by taking the square root of `((x2 - x1) ** 2) + ((y2 - y1) ** 2)`.
 
 Create a few line segments with different coordinates and use your length method on them.
 
