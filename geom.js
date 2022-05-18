@@ -54,7 +54,23 @@ class Triangle extends Shape{
     return true
     }
     else {
-@@ -76,7 +73,7 @@ class Triangle extends Shape{
+      return false
+    }
+  }
+  area(){
+    let s = (this.sideA + this.sideB + this.sideC) / 2;
+    return (Math.sqrt((s * (s - this.sideA) * (s - this.sideB) * (s - this.sideC))));
+  }
+  isObtuse(){
+    if ((this.sideA ** 2) + (this.sideB ** 2) < (this.sideC ** 2)) {
+      return true;
+    } else if ((this.sideC ** 2) + (this.sideB ** 2) < (this.sideA ** 2)){
+      return true;
+    } else if ((this.sideA ** 2) + (this.sideC ** 2) < (this.sideA ** 2)) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
 
